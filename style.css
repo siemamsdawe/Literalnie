@@ -1,0 +1,311 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+#container
+{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.green
+{
+    background-color: rgb(52, 116, 52);
+    animation: coolgreen 800ms ease;
+}
+
+@keyframes coolgreen
+{
+    0%{
+        background-color: #fff;
+        transform: rotateY(-180deg);
+    }
+
+    10%
+    {
+        background-color: rgb(117, 169, 117);
+        -webkit-box-shadow: 1px 7px 44px 0px rgb(105, 195, 125);
+        -moz-box-shadow: 1px 7px 44px 0px rgb(105, 195, 125);
+        box-shadow: 1px 7px 44px 0px rgb(105, 195, 125);
+        color:rgb(254, 180, 180);
+    }
+
+    40%
+    {
+        color: rgb(191, 253, 182);
+    }
+
+    50%
+    {
+        background-color: rgb(117, 169, 117);
+        -webkit-box-shadow: 1px 7px 44px 0px rgba(59, 169, 83, 1);
+        -moz-box-shadow: 1px 7px 44px 0px rgba(59, 169, 83, 1);
+        box-shadow: 1px 7px 44px 0px rgba(59, 169, 83, 1);
+        color:rgb(184, 184, 251);
+    }
+
+    100%
+    {
+        background-color: rgb(65, 143, 65);
+        transform: rotateY(0deg);
+        color: white;
+    }
+}
+
+@keyframes coolyellow
+{
+    0%{
+        background-color: #fff;
+        transform: rotateY(-180deg);
+    }
+
+    10%
+    {
+        background-color: rgb(211, 211, 35);
+        -webkit-box-shadow: 1px 7px 44px 0px rgb(237, 237, 33);
+        -moz-box-shadow: 1px 7px 44px 0px rgb(237, 237, 33);
+        box-shadow: 1px 7px 44px 0px rgb(237, 237, 33);
+    }
+
+    50%
+    {
+        background-color: rgb(211, 211, 35);
+        -webkit-box-shadow: 1px 7px 44px 0px rgb(237, 237, 33);
+        -moz-box-shadow: 1px 7px 44px 0px rgb(237, 237, 33);
+        box-shadow: 1px 7px 44px 0px rgb(237, 237, 33);
+    }
+
+    100%
+    {
+        background-color: rgb(171, 171, 23);
+        transform: rotateY(0deg);
+        color: white;
+    }
+}
+
+.gray
+{
+    background-color: gray;
+    animation: coolgray 800ms ease;
+    position: relative;
+}
+
+@keyframes coolgray 
+{
+    0%
+    {
+        top: -400px;
+    }
+
+    10%
+    {
+        -webkit-box-shadow: -1px -36px 24px -10px red;
+        -moz-box-shadow: -1px -36px 24px -10px red;
+        box-shadow: -1px -36px 24px -10px red;
+    }
+
+    50%
+    {
+        -webkit-box-shadow: -1px -36px 24px -10px orange;
+        -moz-box-shadow: -1px -36px 24px -10px orange;
+        box-shadow: -1px -36px 24px -10px orange;
+    }
+
+    80%
+    {
+        -webkit-box-shadow: -1px -36px 24px -10px yellow;
+        -moz-box-shadow: -1px -36px 24px -10px yellow;
+        box-shadow: -1px -36px 24px -10px yellow;
+    }
+
+    100%
+    {
+        top: 0;
+    }
+    
+}
+
+.coolWin
+{
+    box-shadow: 1px 2px 25px 14px rgb(52, 116, 52);
+    background-color: rgb(52, 116, 52);
+    animation: 1s coolWinStyle ease;
+}
+
+@keyframes coolWinStyle 
+{
+    0%
+    {
+        box-shadow: 1px 2px 25px 4px rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+    }   
+
+    50%
+    {
+        box-shadow: 1px 2px 25px 8px rgb(183, 255, 169);
+        background-color:rgb(183, 255, 169);
+    }
+
+    100%
+    {
+        box-shadow: 1px 2px 25px 14px rgb(52, 116, 52);
+        background-color: rgb(52, 116, 52);
+    }
+
+}
+
+.yellow
+{
+    background-color: rgb(171, 171, 23);
+    animation: coolyellow 800ms ease;
+}
+
+#containerHeader
+{
+    width: 500px;
+    height: 53px;
+    margin: 0 auto 0 auto;
+    padding-top: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+#leftHeader
+{
+    float: left;
+}
+#rightHeader
+{
+    float: right;
+}
+#centerHeader
+{
+    float: left;
+    margin-left: 75px;
+}
+#centerHeader i,p
+{
+    float: left;
+}
+
+#containerSection
+{
+    width: 500px;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 50px auto;
+    color: #e7e6e6;
+}
+#outputs
+{
+    width: 365px;
+    margin: 0 auto;
+}
+input[type='text']
+{
+    letter-spacing: 55px;
+    width: 390px;
+    border: none;
+    background-color: rgb(131, 131, 131);
+    height: 60px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 0 0 25px; 
+    display: block;
+}
+.block
+{
+    float: left;
+    text-align: center;
+    border: none;
+    font-size: 35px;
+    width: 58px;
+    margin: 2px;
+    padding: 15px 5px;
+}
+.empty
+{
+    border: 2px rgb(195, 195, 195) solid;
+    width: 55px;
+    height: 40px;
+}
+
+#output1
+{
+    display: flex;
+}
+    
+#typing
+{
+    width: 410px;
+    background-color: red;
+    margin: 0 auto 20px auto;
+}
+
+#containerFooter
+{
+    width: 500px;
+    margin: 0 auto;
+    height: 300px;
+    text-align: center;
+}
+
+.row1
+{
+    width: 450px;
+    margin: 0 auto;
+}
+
+.row2
+{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.key
+{
+    width: 44px;
+    margin: 3px;
+    float: left;
+    height: 42px;
+    background-color: rgb(178, 180, 180);
+    border-radius: 10px;
+    padding-top: 18px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.keysSpecial
+{
+    width: 69px;
+    margin: 3px;
+    float: left;
+    height: 42px;
+    background-color: rgb(178, 180, 180);
+    border-radius: 10px;
+    padding-top: 18px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.keysSpecialv2
+{
+    width: 31px;
+    margin: 3px;
+    float: left;
+    height: 42px;
+    background-color: rgb(178, 180, 180);
+    border-radius: 10px;
+    padding-top: 18px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+nav
+{
+    width: 200px;
+    margin: 0 auto;
+}
